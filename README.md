@@ -1,6 +1,8 @@
 # Bagheera
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project's aim is to build from the ground up a visual library using angular components and d3. Maybe some other visual library will be used in the future such as three.js
+
+## Author : Nathan Delavictoire
 
 ## Development server
 
