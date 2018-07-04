@@ -27,7 +27,7 @@ export class NodeVisualComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.node);
+  
   }
 
 }

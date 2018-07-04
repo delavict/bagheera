@@ -3,27 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { D3Service, D3_DIRECTIVES } from './d3';
+import { SimulationGraphModule } from './modules/simulation-graph/simulation-graph.module';
 
 import { AppComponent } from './app.component';
 
-import { GraphComponent } from './visuals/graph/graph/graph.component';
-import { SHARED_VISUALS } from './visuals/shared';
-
-console.log(D3_DIRECTIVES);
 @NgModule({
   declarations: [
     AppComponent,
-    GraphComponent,
-    ...SHARED_VISUALS,
-    ...D3_DIRECTIVES
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    SimulationGraphModule
   ],
-  providers: [D3Service],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
