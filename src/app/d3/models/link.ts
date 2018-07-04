@@ -10,7 +10,7 @@
 
 import { Node } from './';
 
-// Implementing SimulationDatum interface into our custom Link class
+// Implementing Datum interface into our custom Link class
 export class Link implements d3.SimulationLinkDatum<Node> {
     // Optional implementation properties
     index?: number;

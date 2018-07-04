@@ -9,7 +9,7 @@ import { Node, Link } from './d3';
 })
 export class AppComponent {
   nodes: Node[] = []
-  link: Link[] = []
+  links: Link[] = []
 
   constructor(){
     const N = APP_CONFIG.N, 
@@ -28,7 +28,8 @@ export class AppComponent {
         this.nodes[getIndex(i * m)].linkCount++;
 
         // Connecting hte nodes before starting the simulation
-        this.link.push(new Link(i, i * m));
+        this.links.push(new Link(i, i * m));
+        
       }
     }
   }

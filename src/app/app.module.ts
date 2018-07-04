@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { GraphComponent } from './visuals/graph/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
 
-
+console.log(D3_DIRECTIVES);
 @NgModule({
   declarations: [
     AppComponent,

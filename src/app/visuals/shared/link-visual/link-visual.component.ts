@@ -5,6 +5,7 @@ import { Link } from '../../../d3/models';
   selector: '[linkVisual]',
   template: `
     <svg:line
+        class="link"
         [attr.x1]="link.source.x"
         [attr.y1]="link.source.y"
         [attr.x2]="link.target.x"
@@ -19,6 +20,7 @@ export class LinkVisualComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    //console.log(this.link.source);
   }
 
 }
