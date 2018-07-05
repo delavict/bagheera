@@ -1,4 +1,4 @@
-const CONFIG = {
+const SIMULATION_GRAPH_CONFIG = {
     N : 100,
     SPECTRUM: [
       // "rgb(222,237,250)"
@@ -14,4 +14,4 @@ const CONFIG = {
     ]
   }
   
-  export default CONFIG;
+  export default SIMULATION_GRAPH_CONFIG;

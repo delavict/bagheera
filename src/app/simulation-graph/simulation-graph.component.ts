@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import APP_CONFIG from './simulation-graph.config';
+import SIMULATION_GRAPH_CONFIG from './simulation-graph.config';
 import { Node, Link } from './d3';
 
 @Component({
@@ -12,7 +12,7 @@ export class SimulationGraphComponent {
   links: Link[] = []
 
   constructor(){
-    const N = APP_CONFIG.N, 
+    const N = SIMULATION_GRAPH_CONFIG.N, 
     getIndex = number => number - 1;
 
     /** constructing the nods array */

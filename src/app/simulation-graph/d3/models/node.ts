@@ -8,7 +8,7 @@
  path: d3/models/node.ts
 */
 
-import APP_CONFIG from '../../app.config';
+import SIMULATION_GRAPH_CONFIG from '../../simulation-graph.config';
 
 // Implementing SimulationNodeDatum interface into our custom Node class
 export class Node implements d3.SimulationNodeDatum {
@@ -29,7 +29,7 @@ export class Node implements d3.SimulationNodeDatum {
     }
 
     normal = () => {
-        return Math.sqrt(this.linkCount / APP_CONFIG.N)
+        return Math.sqrt(this.linkCount / SIMULATION_GRAPH_CONFIG.N)
     }
 
     get r() {
@@ -41,8 +41,8 @@ export class Node implements d3.SimulationNodeDatum {
     }
 
     get color() {
-        let index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal())
-        return APP_CONFIG.SPECTRUM[index];
+        let index = Math.floor(SIMULATION_GRAPH_CONFIG.SPECTRUM.length * this.normal())
+        return SIMULATION_GRAPH_CONFIG.SPECTRUM[index];
     }
 }
 

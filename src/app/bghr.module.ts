@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { SimulationGraphModule } from './modules/simulation-graph/simulation-graph.module';
+import { SimulationGraphModule } from './simulation-graph/simulation-graph.module';
 
-import { AppComponent } from './app.component';
+import { testDisplayComponent } from './test-display/bghr-test-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    testDisplayComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,6 +18,6 @@ import { AppComponent } from './app.component';
     SimulationGraphModule
   ],
 
-  bootstrap: [AppComponent]
+  bootstrap: [testDisplayComponent]
 })
 export class AppModule { }
