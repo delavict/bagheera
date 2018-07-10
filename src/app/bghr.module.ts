@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { SimulationGraphModule } from './simulation-graph/simulation-graph.module';
+import { ChartModule } from './common/chart/chart.module';
 
 import { testDisplayComponent } from './test-display/bghr-test-display.component';
 
@@ -15,9 +16,18 @@ import { testDisplayComponent } from './test-display/bghr-test-display.component
     BrowserModule,
     FormsModule,
     HttpModule,
-    SimulationGraphModule
+    //DEVELOPED COMPONENT
+    SimulationGraphModule,
+    // CHART LIBRARY
+    ChartModule
+
   ],
 
   bootstrap: [testDisplayComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor(){
+    console.log(ChartModule);
+  }
+}
